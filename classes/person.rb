@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # class person
 class Person
   def initialize(age, name = 'Unkown', parent_permission: true)
