@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# class Person
+# class person
 class Person
   def initialize(age, name = 'Unkown', parent_permission: true)
     @id = Random.rand(1..1000)
