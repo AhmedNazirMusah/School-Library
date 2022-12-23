@@ -3,6 +3,7 @@ require_relative 'person'
 # class Student
 class Student < Person
   attr_accessor :classroom
+
   # constructor
 
   def initialize(classroom, age, name = 'Unkown', parent_permission: true)
