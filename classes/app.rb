@@ -99,7 +99,7 @@ class App # rubocop:disable Metrics/ClassLength
     name = gets.chomp
     print 'Has parents permission? [Y/N]: '
     permission = gets.chomp
-    new_student = Student.new(age, permission, name)
+    new_student = Student.new(permission, age, name)
     @people.push(new_student)
     puts 'Person created successfully'
     return_to_menu
@@ -113,7 +113,7 @@ class App # rubocop:disable Metrics/ClassLength
     name = gets.chomp
     print 'specialization: '
     specialization = gets.chomp
-    new_teacher = Teacher.new(age, specialization, name)
+    new_teacher = Teacher.new(specialization, age, name)
     @people.push(new_teacher)
     puts 'Teacher created successfully'
     return_to_menu
@@ -164,6 +164,7 @@ class App # rubocop:disable Metrics/ClassLength
         puts 'Person ID not found'
       end
     end
+    return_to_menu
   end
 
   # User options
