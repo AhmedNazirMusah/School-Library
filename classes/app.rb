@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+# rubocup:disable  Metrics/ClassLength
+
 require_relative 'student'
 require_relative 'book'
 require_relative 'rental'
