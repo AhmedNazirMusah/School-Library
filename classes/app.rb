@@ -1,5 +1,3 @@
-# rubocup:disable  Metrics/ClassLength
-
 require_relative 'student'
 require_relative 'book'
 require_relative 'rental'
@@ -14,6 +12,7 @@ class App
     @rentals = []
   end
 
+  # display home page
   def run
     puts main_menu
     input = gets.chomp
@@ -36,6 +35,7 @@ class App
     run
   end
 
+  # Main menu
   def main_menu
     puts 'Welcome to the School library App!'
     puts ''
@@ -104,6 +104,7 @@ class App
     return_to_menu
   end
 
+  # create a teacher
   def create_teacher
     print 'Age: '
     age = gets.chomp.to_i
