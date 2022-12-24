@@ -1,7 +1,3 @@
-# rubocop:disable Metrics/ClassLength
-# rubocop:disable Metrics/MethodLength
-# rubocop:disable Metrics/AbcSize
-
 require_relative 'student'
 require_relative 'book'
 require_relative 'rental'
